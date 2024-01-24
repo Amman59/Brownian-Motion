@@ -1,2 +1,10 @@
 # Brownian-Motion
 I will Look at Brownian Motion in this repository
+
+The first block of code has come from (https://medium.com/@mlblogging.k/simulating-brownian-motion-and-stock-prices-using-python-17b6b4bd2a1) I have added notes depecting important lines of code, as to what function they serve in thsi process. I have previously made a simple random walk before but I like thsi code more. This uses plotly instead of matplotlib, which apparently requires less code to distingush itself,and is interactive - meaning I can hover my mouse over a point on the graph and it can provide me with a designated value! Based on this, I may be using this graphing module going forward.
+
+Having the code for a 1d random walk, I want to make my own code to show a 2d random walk(using the above as inspiration).This will look a lot weirder, and for my benefit I think I will just plot a single trajectory.
+
+ My code (Block 2) did not work, so I compared it with the code that was given (Block 3) and modified it as such. This optimized a probability process I had added, which made me provide all outcomes and conditions upon which thos outcomes would occur. My graph is exhiniting diagonal properties, meaning instead of moving in the X direction or the Y direction it is moving in both axis at the same time. This is technically closer to actaul brownian motion, but my aim in this was to only move in a single direction with each step, such such that the total distance walked would be equal to the numbe of steps. I solved the issue - I accidentally made the (x= list(steps[:,0])) line say 'y' instead of 'x'. 
+
+ Now I want True brownian motion.This means moving with complete randomness, rather than the simple random walk. The implication of this is that both X and Y can move by a given amount, but this is not preset to 1. For this the total distance traveled in a move must be equal to 1, thus when Delta(X) and Delta(Y) are put into quadrature the value will be 1. In the one dimensional case 
