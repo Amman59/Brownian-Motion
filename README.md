@@ -1,5 +1,5 @@
 # Brownian-Motion
-I will Look at Brownian Motion in this repository
+I will Look at Brownian Motion in this repository - for Reference please check the Optimized area notebook.
 
 The first block of code has come from (https://medium.com/@mlblogging.k/simulating-brownian-motion-and-stock-prices-using-python-17b6b4bd2a1) I have added notes depecting important lines of code, as to what function they serve in thsi process. I have previously made a simple random walk before but I like thsi code more. This uses plotly instead of matplotlib, which apparently requires less code to distingush itself,and is interactive - meaning I can hover my mouse over a point on the graph and it can provide me with a designated value! Based on this, I may be using this graphing module going forward.
 
